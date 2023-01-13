@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        //loop
+        //while, do while, for
+
+        //while loop
+        //let count = 0;
+        //while(count < 5){
+          //  document.write("class <br>")
+          //  count++;
+        //}
+
+        //print your name 15 times with while loop 
+        //e.g; 1.debbie, 2.debbie.......etc.
+        //let count = 0;
+        //let num = 1 ;
+        //while (count < 16 & num < 16){
+                //document.write(num + ". debbie <br>")
+                //count++;
+                //num++;
+        //}
+
+         // while 
+    //     let x = 0;
+    // while (x < 5){
+    //     prompt("What's is your name please?")
+    //     document.write(x)
+    //     x++;
+    // }
+
+    //do while loop
+    // let y = 0;
+    // do{
+    //     prompt("What is your name please?")
+    //     y++;
+    // }while(y < 5);
+
+    // //for loop
+    // for(let x = 0; x <= 20; x++){
+    //     document.write(x + ", ")
+    // }
+
+    //Calculator (switch and loop)
+
+    // variable that can help terminate our loop
+
+    //let continue_running = true;
+    do{
+        //to get the numbers to work with
+        let firstnumber, secondnumber;
+
+        let operator = prompt("CALCULATOR \n1. Addition  \n2. Subtraction  \n3. Multiplication  \n4. Division  \n5. Modulo  \n6. Exit");
+
+        // Do the calculation based on the menu selected
+        switch (operator) {
+            case "1":
+                firstnumber = parseInt(prompt("Enter the first number"))
+                secondnumber = parseInt(prompt("Enter the second number"))
+                document.write(firstnumber + " + " + secondnumber + " = " + (firstnumber + secondnumber) + "<br>");
+                break;
+            case "2": 
+                firstnumber = parseInt(prompt("Enter the first number"))
+                secondnumber = parseInt(prompt("Enter the second number"))
+                document.write(firstnumber + " - " + secondnumber + " = " + (firstnumber - secondnumber) + "<br>");
+                break;
+            case "3": 
+                firstnumber = parseInt(prompt("Enter the first number"))
+                secondnumber = parseInt(prompt("Enter the second number"))
+                document.write(firstnumber + " x " + secondnumber + " = " + (firstnumber * secondnumber) + "<br>");
+                break;
+            case "4": 
+                firstnumber = parseInt(prompt("Enter the first number"))
+                secondnumber = parseInt(prompt("Enter the second number"))
+                document.write(firstnumber + " / " + secondnumber + " = " + (firstnumber / secondnumber) + "<br>");
+                break;
+            case "5": 
+                firstnumber = parseInt(prompt("Enter the first number"))
+                secondnumber = parseInt(prompt("Enter the second number"))
+                document.write(firstnumber + " % " + secondnumber + " = " + (firstnumber % secondnumber) + "<br>");
+                break;
+            case "6": 
+                continue_running = false;
+                break;
+            default: 
+                document.write("Sorry! Invalid input. Please kindly enter numbers from 1 to 5")
+        }
+    }while(continue_running);
+
+
+    //<script>
+        //for(let x = 0; x <= 20; x+2){
+            //document.write(x + ", ");
+        //}
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 4px solid grey;
+        }
+    </style>
+    <!-- <style>
+        canvas{border:medium double red; margin:4px;}
+    </style> -->
+    <script>
+        window.onload = function(){
+            var canvas = document.getElementById('mCanvas');
+            var ctext = canvas.getContext('2d');
+            ctext.beginPath();
+            ctext.rect(30, 50, 150, 100);
+            ctext.fillStyle = "pink";
+            ctext.fill()
+            ctext.lineWidth = "5";
+            ctext.strokeStyle = "red";
+            ctext.stroke();
+        };
+    </script>
+</head>
+<body>
+    <canvas id="mCanvas"width="578"height="200"></canvas>
+
+
+
+    <!-- <canvas width="278"height="200"></canvas> -->
+</body>
+</html>

@@ -1,0 +1,24 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr th{
+    padding: 20px;
+    background-color:burlywood;
+}
+table tr td{
+    padding: 20px;
+}
+table tr:nth-child(2){
+    background-color: firebrick;
+}
+table tr td[rowspan]{
+    background-color: powderblue;
+}
+table tr:last-child td:first-child{
+    background-color:indianred;
+}
+/* table tr td{
+    background-color: linen;
+} */

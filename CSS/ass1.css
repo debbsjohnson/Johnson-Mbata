@@ -1,0 +1,31 @@
+body{
+    background-color:lightblue;color: black;
+    margin-left: 30px;
+    padding: 0px 10px 0px 10px;
+}
+
+h1{
+    text-align: center; 
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+div{
+    background-color:darkslategray;
+    color:aliceblue;
+    /* text-align:unset; */
+    padding: 30px;
+    
+}
+
+.para{
+    width:200px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    color:black;
+    text-align: center;
+    border-left: 30px solid grey;
+    position:absolute;
+    left: 500px;
+    bottom: 0px;
+    /* top: 550px; */
+}

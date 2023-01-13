@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-color: mistyrose;
+            border-radius: 50%;
+            position: absolute;
+            animation-name: anime;
+            animation-timing-function: ease;
+            animation-duration: 8s;
+            animation-delay: 1s;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        @keyframes anime{
+            0%{
+                background-color: cadetblue;
+                top: 200px;
+                left: 150px;
+            }
+            10%{
+                background-color:darkseagreen;
+                top: 150px;
+                left: 400px;
+            }
+            20%{
+                background-color: lightblue;
+                bottom:470px;
+                right:440px
+            }
+            30%{
+                background-color: bisque;
+                top: 300px;
+                bottom:450px;
+            }
+            40%{
+                background-color: rgb(183, 113, 28);
+                bottom: 310px;
+                left:470px;
+            }
+            50%{
+                background-color:cornflowerblue;
+                top: 420px;
+                left:400px;
+            }
+            60%{
+                background-color:darkcyan;
+                bottom: 50px;
+                top:400px;
+            }
+            70%{
+                background-color:darksalmon;
+                top: 310px;
+                left:200px;
+            }
+            80%{
+                background-color:lightpink;
+                bottom: 220px;
+                top:220px;
+            }
+            90%{
+                background-color:aquamarine;
+                bottom: 160px;
+                right:0px;
+            }
+            100%{
+                background-color:darkred;
+                top: 400px;
+                bottom:300px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">debbie</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students = new Array(6);
+        students[0] = "nelson"
+        students[1] = "malik"
+        students[2] = "dapo"
+        students[3] = "uche"
+        students[4] = "diamond"
+        students[5] = "onyx"
+
+        document.write(students + "<br>")
+
+        //adding an element to an array by using push()
+        students.push("debbie");
+        document.write(students + "<br>")
+
+
+        //removing an elemnt from an array by using pop
+        students.pop()
+        document.write(students + "<br>")
+
+        //unshift() - adding an element at the beginning of an array
+        students.unshift("debbie")
+        document.write(students + "<br>")
+
+        //shift() - removing an element at the beginning of an array
+        students.shift("debbie")
+        document.write(students + "<br>")
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* align-content: space-between; */
+}
+
+.flex-item{
+    width:300px;
+    height:100px;
+}
+.item1{
+    background-color: darkcyan;
+}
+.item2{
+    background-color: lavender;
+}
+.item3{
+    background-color: lightpink;
+}
+@media screen and (max-width: 500px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .flex-item{
+        height: 100px;
+    }
+}

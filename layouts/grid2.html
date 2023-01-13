@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(70, 9, 9);
+            padding: 10px 200px;
+        }
+        .grid-container{
+            padding: 50px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: repeat(4, 130px);
+        }
+        .grid-item{
+            padding: 20px;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .item1{
+            background-image: url('https://images.unsplash.com/photo-1615012553971-f7251c225e01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmVkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+            grid-row-start: 1;
+            grid-row-end: 4;
+
+        }
+        .item2{
+            background-image: url('https://images.unsplash.com/photo-1543985316-0906a00dc33c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cm9qb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60');
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .item3{
+            background-image: url('https://images.unsplash.com/photo-1575940561215-ea97f81b32bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cm9qb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60');
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .item4{
+            background-image: url('https://images.unsplash.com/photo-1665365487106-121c6dc70ec5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fENEd3V3WEpBYkV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .item5{
+            background-image: url('https://images.unsplash.com/photo-1666161922647-ad32c06f910b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fENEd3V3WEpBYkV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+    </div>
+</body>
+</html>

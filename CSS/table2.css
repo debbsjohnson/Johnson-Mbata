@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+    width: 60%;
+    height: 30vh;
+}
+th{
+    background-color: black;
+    color: white;
+    height: 5vh;
+}
+td{
+    padding-left: 10px;
+}

@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+    height: 50vh;
+    width: 50%;
+}
+
+th{
+    background-color: lightslategray;
+}
+td{
+    text-align: center;
+    background-color: burlywood;
+}

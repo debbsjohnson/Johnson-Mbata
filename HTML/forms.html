@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <form method="post">
+        <h3>Personal Information</h3>
+        <div></div><label for="firstname">Firstname  </label><i class="fa-solid fa-user"></i><input type="text" id = "firstname"> <br> <br>
+        </div>
+        <div> <label for="lastname">Lastname  </label><i class="fa-solid fa-user"></i><input type="text" id = "lastname"> <br> <br>
+        </div>
+        <label for="gender">Gender:</label>
+        Male <input type="radio" name="gender" id="male">
+        Female <input type="radio" name="gender" id="female"> <br> <br>
+        <Label for="dob">Date of Birth</Label><input type="date" id="dob"> <br> <br>
+        <label for="contact no">Contact No: </label><input type="number" 
+        id="contact no" placeholder="(+234)"> <br> <br>
+        <label for="hobbies">Hobbies: </label>
+        Singing<input type="checkbox" id="singing">
+        Dancing<input type="checkbox" id="dancing">
+        Cooking<input type="checkbox" id="cooking">
+        Travelling<input type="checkbox" id="travelling"> <br> <br>
+        <label for="email">Email: </label><input type="email" id="email"> <br> <br>
+        <label for="password">Password: </label><input type="password" id="password"> <br> <br>
+        <label for="leisure">Leisure Time</label>
+        <select name="leisure" id="leisure"> 
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+            <option value="night">Night</option> 
+        </select> <br> <br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Cancel">
+
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 2rem;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+div{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}

@@ -1,0 +1,8 @@
+
+
+    <!ELEMENT email (header, message)>
+    <!ELEMENT header (to,cc,subject)>
+    <!ELEMENT to (#PCDATA)>
+    <!ELEMENT cc (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT message (#PCDATA)>

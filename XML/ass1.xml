@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE email SYSTEM "./ass1.dtd" [
+<!ENTITY number "1">
+<!ENTITY commat "@">
+]>
+<!-- ? - means 0 or 1 (it can appear either once or not appear at all)-->
+<!-- * - means 0 or more (it can appear either multiple times or not appear at all)-->
+<!-- + - means 1 or more (it can appear either once or multiple times)-->
+
+<email>
+    <header>
+        <to>mrjames&commat;gmail.com</to>
+
+        <cc>mrcasmir&commat;aptech.come</cc>
+
+        <subject>assignment &number; report</subject>
+    </header>
+
+    <message>
+        we are very glad that you grouped us to do this assignment. more of it please!
+    </message>
+
+</email>

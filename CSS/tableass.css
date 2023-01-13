@@ -1,0 +1,51 @@
+table{
+    width: 100%;
+}
+table tr th[colspan]{
+    text-align: right;
+}
+.tea{
+    text-align: right;
+}
+table tr:nth-child(2){
+    color: white;
+    background-color: orange;
+}
+table tr:nth-child(4){
+    color: white;
+    background-color: orange;
+}
+table tr:nth-child(6){
+    color: white;
+    background-color: orange;
+}
+table tr:nth-child(8){
+    color: white;
+    background-color: orange;
+}
+table tr:nth-child(odd){
+    background-color: whitesmoke;
+}
+table tr:nth-child(11){
+    color: white;
+    background-color: orange;
+}
+.lastbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 10px; */
+}
+.ok{
+    padding: 20px;
+}
+table tr td select{
+    width: 100px;
+    height: 30px;
+}
+table tr td, table th{
+    padding: 8px;
+}
+caption{
+    border-style:dotted;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:burlywood;
+            padding: 10px 50px;
+        }
+        .grid-container{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: repeat(9, 70px);
+            gap:5px;
+        }
+        .grid-item{
+            padding: 20px;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .item1{
+            background-image: url('https://images.unsplash.com/photo-1456518563096-0ff5ee08204e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhcm9xdWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60');
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item2{
+            background-image: url('https://images.unsplash.com/photo-1610557014000-f0b8b8692172?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80') ;
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        .item3{
+            background-image: url('https://images.unsplash.com/photo-1629030276727-ccbee4f883e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGJhcm9xdWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60') ;
+            grid-column-start: 6;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        .item4{
+            background-image: url('https://images.unsplash.com/photo-1599276488466-b13c3ca3f1ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhcm9xdWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60') ;
+            grid-row-start: 4;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item5{
+            background-image: url('https://images.unsplash.com/photo-1456602277280-6cf1f7b3324b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGJhcm9xdWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60') ;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 7;
+            grid-row-end: 9;
+        }
+        .item6{
+            background-image: url('https://images.unsplash.com/photo-1601546993085-fdfb6c5f76a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGJhcm9xdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60') ;
+            grid-column-start: 4;
+            grid-column-end: 8;
+            grid-row-start: 6;
+            grid-row-end: 9;
+        }
+        .item7{
+            background-image: url('https://images.unsplash.com/photo-1518024858178-ee2b64d61d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGJhcm9xdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60') ; 
+            grid-row-start: 9; 
+            grid-row-end: 10;      
+        }
+        .item8{
+            background-image: url('https://images.unsplash.com/photo-1559246003-f70f1d16c169?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGJhcm9xdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60') ;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item9{
+            background-image: url('https://images.unsplash.com/photo-1581593439266-65ce3a434bb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fGJhcm9xdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60') ;
+            grid-column-start: 4;
+            grid-column-end: 7;
+        }
+        .item10{
+            background-image: url('https://images.unsplash.com/photo-1626601714027-1f56d82a5aa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY3fHxiYXJvcXVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60') ;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 50px;
+            color:black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="font"><i class="fa-solid fa-microchip"></i>AJ TECH</div>
+        <ul class="links">
+            <li><a href="../HTML/nav.html"><i class="fa-solid fa-house-user"></i>Home</a></li>
+            <li><a href="../practice/prac.html"><i class="fa-solid fa-landmark"></i>About Us</a></li>
+            <li><a href="../layouts/hw.html"><i class="fa-solid fa-image"></i>Gallery</a></li>
+            <li><a href="../HTML/contact.html"><i class="fa-solid fa-address-card"></i>Contact Page</a></li>
+        </ul>
+        <div class="navlink"><a href="#">Join Here</a></div>
+    </nav>
+
+    <h1>NAVIGATION</h1>
+    <div class="grid-container">
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item3"></div>    
+        <div class="grid-item item4"></div>
+        <div class="grid-item item5"></div>
+        <div class="grid-item item6"></div>
+        <div class="grid-item item7"></div>
+        <div class="grid-item item8"></div>
+        <div class="grid-item item9"></div>
+        <div class="grid-item item10"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+    <!ELEMENT players (name, age, wages, club)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT wages (#PCDATA)>
+    <!ELEMENT club (#PCDATA)>
+    <!ATTLIST club ranking CDATA #REQUIRED>
+    <!ATTLIST age dob CDATA #IMPLIED>
+    <!ATTLIST name nickname CDATA #FIXED "luca">
+    <!ATTLIST age gen (old|legend) "legend">

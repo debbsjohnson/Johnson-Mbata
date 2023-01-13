@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //regular expression
+        //let sentence = prompt("enter a sentence")
+
+        //let word = prompt("enter a word to search")
+
+        //sentence = sentence.toLocaleLowerCase();
+        //word = word.toLocaleLowerCase();
+
+        //if (sentence.search(word) >= 0){
+        //    alert(word + " is found in the sentence")
+        //} else{
+       //     alert(word + " is not found in the sentence")
+        //}
+
+        //regexp
+        const regex = new RegExp(/[^hello]/g)
+        const result = regex.test("hello everyone here")
+        console.log(result)
+    </script>
+</body>
+</html>

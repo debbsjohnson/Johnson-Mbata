@@ -1,0 +1,27 @@
+.grid-container{
+    padding: 10%;
+    background-color: darkseagreen;
+    grid-template-columns: auto auto auto;
+    display:grid;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.grid-item{
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.item2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

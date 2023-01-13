@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body{
+            margin-left: 300px;
+            padding: 10px;
+            align-items: center;
+        }
+        label{
+            padding:10px;
+        }
+        input{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <h3>Personal Details</h3>
+        <div></div><label for="firstname">Firstname: </label><i class="fa-solid fa-user"></i><input type="text" id = "firstname">
+        </div> <br> <br>
+        <div> <label for="lastname">Lastname: </label><i class="fa-solid fa-user"></i><input type="text" id = "lastname">
+        </div> <br>
+        <div><label for="department/office">Department/Office:  </label><i class="fa-solid fa-bars"></i>
+            <select name="department/office" id="department/office"> 
+                <option value="accounting">Accounting</option>
+                <option value="it">IT</option>
+                <option value="welfare">Welfare</option>
+                <option value="medical">Medical</option> 
+            </select> </div> <br>
+        <div><label for="username">Username:  </label><i class="fa-solid fa-user"></i><input type="username" id="username"></div> <br>
+        <div><label for="password">Password: </label><i class="fa-solid fa-user"></i><input type="password" id="password"></div> <br>
+        <div><label for="confpassword">Confirm Password: </label><i class="fa-solid fa-user"></i><input type="password" id="confpassword"></div> <br>
+        <div> <label for="email">Email: </label><i class="fa-solid fa-envelope"></i><input type="email" id="email"></div> <br>
+        <div><label for="contact no">Contact No: </label><i class="fa-solid fa-phone"></i><input type="number" 
+            id="contact no" placeholder="(+234)"></div> <br>
+            <div ><input type="submit" value="Submit" style="background-color:coral; color:white"><i class="fa-solid fa-paper-plane"></i></div>
+
+
+
+    </form>
+</body>
+</html>

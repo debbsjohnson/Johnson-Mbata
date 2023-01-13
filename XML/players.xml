@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD -->
+<!-- <!DOCTYPE players [
+    <!ELEMENT players (name, age, wages, club)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT wages (#PCDATA)>
+    <!ELEMENT club (#PCDATA)>
+]>
+<players>
+    <name>Modric</name>
+    <age>37</age>
+    <wages>350000</wages>
+    <club>Reál Madrid</club>
+</players> -->
+
+<!DOCTYPE players SYSTEM "./players.dtd" [
+<!ENTITY dollar "$">
+]>
+
+<players>
+    <name nickname="luca">Modric</name>
+    <!-- <age dob="19-12-2000">37</age> -->
+    <age gen="legend">37</age>
+    <wages>&dollar;350000</wages>
+    <!-- <club>Reál Madrid</club> -->
+    <club ranking = "best in the world">Reál Madrid</club>
+</players>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salary = 0;
+        age = parseInt(prompt("enter your age"));
+        salary = parseInt(prompt("enter your salary"))
+        //tenary operator
+        let message = age >= 22 &&  salary >= 50000 ? "congratulations,you are eligible for loan!" : 
+        "sorry, you're not eligible for loan";
+        document.write(message)
+
+       //if else
+       if(age >= 22 && salary >= 50000){
+        message = "congratulations, you're eligible for loan!";
+       }
+       else{
+        message = "sorry, you are not eligible for loan";
+       }
+       document.write(message)
+
+    </script>
+</body>
+</html>

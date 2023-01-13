@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- method 1 -->
+<!-- <aptech>
+    <ft:employee xmlns:ft="https://www.aptechlekki.com/fullstaff">
+        <ft:name>John</ft:name>
+        <ft:dob>18-05-2002</ft:dob>
+    </ft:employee>
+    <pt:employee xmlns:pt="https://www.aptechlekki.com/parttimestaff">
+        <pt:name>Sugar</pt:name>
+        <pt:dob>14-08-1999</pt:dob>
+    </pt:employee>
+</aptech> -->
+
+<!-- method 2 -->
+<!-- <aptech>
+    <employee xmlns="https://www.aptechlekki.com/fullstaff">
+        <name>John</name>
+        <dob>18-05-2002</dob>
+    </employee>
+    <employee xmlns="https://www.aptechlekki.com/parttimestaff">
+        <name>Sugar</name>
+        <dob>14-08-1999</dob>
+    </employee>
+</aptech> -->
+
+<!-- method 3 -->
+<aptech xmlns:ft="https://www.aptechlekki.com/fullstaff" xmlns:pt="https://www.aptechlekki.com/parttimestaff">
+    <ft:employee>
+        <ft:name>John</ft:name>
+        <ft:dob>18-05-2002</ft:dob>
+    </ft:employee>
+    <pt:employee>
+        <pt:name>Sugar</pt:name>
+        <pt:dob>14-08-1999</pt:dob>
+    </pt:employee>
+</aptech>

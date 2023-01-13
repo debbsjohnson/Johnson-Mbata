@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let student1 = "nelson";
+        //let student2 = "malik";
+        //let student3 = "dapo";
+        //let student4 = "uche";
+        //let student5 = "diamond";
+        //let student6 = "onyx";
+
+        //single dimensional array
+        //let students = new Array(6);
+        //students[0] = "nelson"
+        //students[1] = "malik"
+        //students[2] = "dapo"
+        //students[3] = "uche"
+        //students[4] = "diamond"
+        //students[5] = "onyx"
+
+        //document.write(students + "<br>")
+        //document.write(students[3] , students[4])
+        //for(let i = 0; i < 6; i++){
+           // document.write(i + "." + students[i] + "<br>");
+        //}
+        //or using while loop
+        //while (num < 6){
+            //document.write(num + "." + students[num] + "<br>")
+            //num++;
+        //}
+
+
+        //multi-dimensional array
+        //let  multidim = [
+            //[3, 2, 5],
+            //[4, 1, 6]
+        //]
+        //document.write(multidim);
+        //document.write(multidim[1][2]);
+
+        let scores = [
+            [70, 55, 85],
+            [45, 90, 83]
+        ];
+
+        let names = ["diamond", "uche"];
+        let subjects = ["eng", "maths", "arts"];
+
+        for (let i = 0; i < 3; i++){
+            document.write("&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + subjects[i])
+        }
+        document.write("<br>")
+
+        for (let row = 0; row < 2; row++){
+            document.write(names[row] + "&nbsp; &nbsp;&nbsp;&nbsp;")
+            for (let col = 0; col < 3; col++){
+                document.write("&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + scores[row][col])
+            }
+            document.write("<br>")
+        }
+
+
+    </script>
+</body> 
+</html>
